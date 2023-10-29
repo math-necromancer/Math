@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "compare": "cpp",
+        "cstdint": "cpp",
+        "crtdefs.h": "c",
+        "corecrt.h": "c",
+        "iostream": "cpp",
+        "functional": "cpp",
+        "cmath": "cpp",
+        "complex": "cpp",
+        "cstdlib": "cpp",
+        "algorithm": "cpp",
+        "ostream": "cpp"
+    }
+}
