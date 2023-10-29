@@ -22,6 +22,7 @@ class complex
         {}
 };
 
+/*Add one complex number with another*/
 complex complex_add(const complex& x, const complex& y)
 {  
     /*To add complex numbers, simply add both the real and*/
@@ -29,20 +30,21 @@ complex complex_add(const complex& x, const complex& y)
     return complex(x.r + y.r, x.i + y.i);
 }
 
+/*Subtract one complex number from another*/
 complex complex_sub(const complex& x, const complex& y)
 {
     return complex(x.r - y.r, x.i - y.i);
     /*Same principle as addition, just flipped*/
 }
 
-/*Subtract one complex number from another*/
+/*Mltiply one complex number by another*/
 complex complex_multiply(const complex& x, const complex& y)
 {
     /*FOIL simulation - there is subtraction because i*i = -1*/
     return complex(x.r * y.r - x.i * y.i, x.r * y.i + x.i * y.r);
 }
 
-/*Mltiply one complex number by another*/
+/*Get the conjugate of a complex number*/
 complex complex_conj(const complex& x)
 {
     return complex(x.r, -x.i);
@@ -60,11 +62,13 @@ complex complex_div(const complex& x, const complex& y)
         (x.i * y.r - x.r * y.i) / z);
 }
 
+/*Get the real component of a complex number*/
 double get_real(const complex& x)
 {
     return x.r;
 }
 
+/*Get the multiple of i of a complex number*/
 double get_imaginary(const complex& x)
 {
     return x.i;
