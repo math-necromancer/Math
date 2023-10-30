@@ -52,7 +52,6 @@ cordic_result cordic_vector(double x, double y, double theta)
     double y_new = y;
     double exp_2 = 1.0;
     double angle = 0.0;
-
     for(int i = 1; i < arctan_table_length; i++)
     {
         /*Delta determines whether y is positive*/
@@ -74,11 +73,8 @@ cordic_result cordic_vector(double x, double y, double theta)
         exp_2 *= 2;
 
     }
-
     /*Defines the return values. The angle variable is the arctangent*/
     cordic_result return_val(x, y, angle);
-
-
     return return_val;
 }
 
@@ -90,7 +86,6 @@ cordic_result cordic_angle(double x, double y, double theta)
     double y_new = y;
     double exp_2 = 1.0;
     double angle = 0.0;
-
     for(int i = 0; i < arctan_table_length; i++)
     {
         /*Similar to cordic_vector's delta, except*/
@@ -112,11 +107,9 @@ cordic_result cordic_angle(double x, double y, double theta)
         /*to prepare for the next one*/
         exp_2 *= 2;
     }
-
     /*Defines the return values; x and y are the*/
     /*Sine and Cosine scaled by some constant*/
     cordic_result return_val(x, y, angle);
-
     return return_val;
 }
 
@@ -133,7 +126,7 @@ double cordic_arctan(double x)
 {
     /*Same concept as cordic_arctan2*/
     /*Turns x into a ratio by dividing by 1*/
-    
+
     double y = 1;
     cordic_result result = cordic_vector(y, x, 0);
     return result.angle;

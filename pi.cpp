@@ -1,12 +1,7 @@
 #include <iostream>
-#include "math/frac.hpp"
+#include "math/cordic.hpp"
 
 int main()
 {
-    fraction f_0(2, 3);
-    fraction f_1(5, 9);
-
-    bool result = f_0 > f_1;
-
-    std::cout << "True: " << result << '\n';
+    std::cout << cordic_sin(0.5);
 }
