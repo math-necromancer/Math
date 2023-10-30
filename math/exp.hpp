@@ -55,7 +55,6 @@ double log_e(double x)
         /*and negative values of x*/
         return undefined;
     } 
-
     if(x == 1)
     {
         return 0;
@@ -68,7 +67,6 @@ double log_e(double x)
     {
         return 1;
     }
-
     double log_sub_lnx;
     if(x < 6)
     {

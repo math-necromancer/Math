@@ -190,17 +190,14 @@ double cordic_log_e(double x)
     {
         return 0;
     }
-    
     double term = (x * x - 2 * x + 1) / (x * x + 2 * x + 1);
     double numerator = (x - 1) / (x + 1);
     double log_e = 0.0;
-
     for(int i = 1; i <= arctan_table_length; i += 2)
     {
         log_e += numerator / i;
         numerator *= term;
     }
-
     return 2 * log_e;
 }
 #endif /*CORDIC*/
