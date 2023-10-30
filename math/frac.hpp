@@ -162,5 +162,4 @@ bool operator >=(fraction f0, fraction f1)
     return !(f0 < f1);
 }
 
-
 #endif /*_FRACTION*/
