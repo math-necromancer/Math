@@ -12,6 +12,8 @@
 #include "../misc/abs.hpp"
 #include "../trig/cordic.hpp"
 
+using namespace cordic;
+
 /*Complex numbers: 2-dimensional - includes a*/
 /*real component and a multiple of i*/
 class complex
@@ -115,6 +117,6 @@ double complex_magnitude(const complex& x)
 /*Get the Phase Angle of a Complex Number*/
 double complex_phase_angle(const complex& x)
 {
-    return cordic::cordic_arctan2(x.i, x.r);
+    return cordic_arctan2(x.i, x.r);
 }
 #endif /*COMPLEX*/
