@@ -1,7 +1,7 @@
 /*The Math Necromancer*/
 
 /*============ C++ Trigonometry Library ============*/
-/*Includes the 6 basic trigonometric functions:*/
+/*Includes the 6 basic Euclidean trigonometric functions:*/
 /*sin(x), cos(x), tan(x), sec(x), csc(x), cot(x)*/
 /*Also includes inverse trigonometric functions:*/
 /*asin(x), acos(x), atan(x), asec(x), acsc(x), acot(x)*/
@@ -13,8 +13,10 @@
 /*his own use. Please ask permission before using it*/
 /*in your project*/
 
-#ifndef TRIG
-#define TRIG
+/*Euclid more like Bruhhh o-o*/
+
+#ifndef EUCLID_TRIG
+#define EUCLID_TRIG
 
 #include "cordic.hpp"
 #include "../misc/rem.hpp"
@@ -244,4 +246,4 @@ double aexcsc(double x)
     return arcexcsc(x);
 }
 
-#endif /*TRIG*/
+#endif /*EUCLID_TRIG*/

@@ -3,7 +3,7 @@
 #include "math/misc/rem.hpp"
 #include "math/trig/cordic.hpp"
 #include "math/complex/complex.hpp"
-#include "math/trig/trig.hpp"
+#include "math/trig/euclid_trig.hpp"
 
 int main()
 {
