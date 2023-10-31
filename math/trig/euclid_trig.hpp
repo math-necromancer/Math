@@ -21,7 +21,6 @@
 #include "cordic.hpp"
 #include "../misc/rem.hpp"
 #include "../logarithms_exponents/fast_sqrt.hpp"
-#include <iostream>
 
 using namespace cordic;
 
