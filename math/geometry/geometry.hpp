@@ -3,7 +3,7 @@
 #ifndef GEOMETRY
 #define GEOMETRY
 
-#include "constants.hpp"
+#include "../constants/constants.hpp"
 
 class circle
 {

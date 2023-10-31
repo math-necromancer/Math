@@ -3,7 +3,7 @@
 #ifndef _LOG
 #define _LOG
 
-#include "cordic.hpp"
+#include "../trig/cordic.hpp"
 
 #define LN_2 0.69314718056
 #define LN_6 1.79175946923

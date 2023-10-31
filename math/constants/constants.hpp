@@ -30,6 +30,8 @@ double_bits static nan_bits = {0x7FF8000000000001ull};
 
 #define tau 6.283185307179586
 
+#define pi_2 1.5707963267948965
+
 #define rad_to_deg 57.29577951308232
 
 #define deg_to_rad 0.017453292519943
